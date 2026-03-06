@@ -1,0 +1,246 @@
+let name="kanchan" //string
+let age=22 //number
+let isLoggedIn=false //boolean
+
+//(primitive data type) //
+
+//null  => standalone value
+//undefind
+//symbol
+//string
+//boolean
+//number
+//string
+
+// console.log(typeof null); //object
+// console.log(typeof undefined);//undefind
+
+
+
+
+
+// let value="44ahbd"  //NaN
+// console.log(typeof value);
+// let number=Number(value)
+// console.log(value);
+
+
+let score="33"
+// console.log(typeof score);
+let valueInNumber=Number(score)
+// console.log(typeof valueInNumber);
+  
+// conversion
+//"44" =>44
+// "44fgd"=> NaN
+// true => 1; false => 0
+
+let logIn = 1
+let booleanlogIn=Boolean(logIn)
+// console.log(booleanlogIn);
+
+//"" => false
+//1=> true
+//0=>false
+//"kanchan"=>true
+
+let someNumber=45
+let stringNumber=String(someNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+//+++++++++++ Operations+++++++++++
+let str1="kanchan"
+let str2=" rathore"
+let str3=str1+str2
+
+// console.log(str3);
+// console.log(1+"3");
+// console.log("4"+8);
+// console.log("4"+"8");
+// console.log("4"+ 3+6);
+// console.log(3+ 3+"6");
+
+let gameCounter=200
+gameCounter++
+// console.log(gameCounter);//=>201
+
+let a=3
+let b=a++ //postfix
+// console.log(a);//4
+// console.log(b);//3
+//phle use fir change
+
+let c=6
+let d=++c  //prifix
+// console.log(c);   // 7
+// console.log(d);  // 7
+//phle change fir use
+
+// console.log(null>0);  //false
+// console.log(null==0);  //false
+// console.log(null>=0);  //true
+
+// console.log(undefined>0);   //false
+// console.log(undefined==0); //false
+// console.log(undefined>=0); //false
+// console.log(undefined>0); //false
+// console.log(undefined<0); //false
+
+
+// console.log("5"===5); //false
+
+
+
+
+
+//+++++++++++ type of datatype +++
+// primitive datatype
+//non primitive ya reference datatype
+
+/* 
+        (primitive datatype)
+
+string,null,undefind,number,boolean,symbol,bigInt
+ */
+
+/*   
+          (non primitive datatype)
+object,functions,array
+
+ */
+
+const id=Symbol("342")
+const anotherId=Symbol("342")
+// console.log(id===anotherId); //false
+
+const bigNumber=754738373355n //ye bn gya bigInt 
+
+// ++++++++++++++++++++++++++++
+
+ //    (memory)
+ //   Stack memory eske andr (primitive data type)
+ //   Heap memory eske andr (non primitive data type)
+ let instraName="kanchan" 
+ let anotherName=instraName
+ anotherName="KK"
+
+//  console.log(instraName);
+//  console.log(anotherName);
+
+let userOne={
+    name:"kanchan",
+    email:"kanchan05@gmail.com",
+    upi:"rathore@hls"
+}
+ let usertwo=userOne
+ usertwo.email="kaushal@gmail.com"
+//  console.log(userOne.email);
+//  console.log(usertwo.email);
+ 
+ /*heap memory me ye hota h agr hm kisi ek ke andr changes krte h to bo sb me ho ta h jaise abhi maine usertwo ke andr kiya to bo userOne me bhi change ho gya  jbki stack memory me aisa nhi hota usme shallow copy bnti h */
+
+
+ let kname="kanchan"
+ let numCount=78
+//  console.log(`hi my name is ${kname} and my numcount is ${numCount}`);
+
+
+const gameName=new String("kanchan")
+// console.log(gameName[0]); //0 index h
+// console.log(gameName.length);
+// console.log(gameName.charAt(3));
+// console.log(gameName.toUpperCase());
+// console.log(gameName.indexOf("a"));
+// console.log(gameName.substring(0,4));
+
+const anotherString=gameName.slice(4,7)
+//  console.log(anotherString);
+ 
+const newString="   kanchan   "
+// console.log(newString);
+// console.log(newString.trim());// space ko htane ke liye trim use kiya 
+
+const url="https://kanchan.com/kanchan%20rathore"
+// console.log(url.replace("%20","_"));
+
+// console.log(url.includes('kanchan'));
+
+const address="kanchan rathore salempur kuraoli mainpuri"
+// console.log(address.split(' '));
+
+const myName="kanchan"
+// console.log(myName.split(""));
+// console.log(myName.bold());
+// console.log(myName.blink());
+// console.log(myName.fixed());
+
+const value=500
+// console.log(value);
+
+const balance =new Number(500)
+// console.log(balance);
+// console.log(balance.toFixed(2));
+
+const othernumber=34.9700
+// console.log(othernumber.toPrecision(3));
+
+const hundred=30000000
+// console.log(hundred.toLocaleString('en-IN'));
+
+//+++++++++++++++++MATHS+++++++++++++++
+// console.log(Math.abs(-6));
+// console.log(Math.round(34.5));
+// console.log(Math.floor(349.87));
+// console.log(Math.min(3,5,7,2,0,2))
+// console.log(Math.max(3,5,7,2,0,2,8,9))
+
+// console.log(Math.random());
+// console.log (Math.floor(Math.random()*10));
+
+const min=20
+const max=80
+// console.log(Math.floor(Math.random()*(max-min+1))+min);
+
+
+
+//    +++++++++ DATES ++++++++++++++++
+  let myDate=new Date()
+//   console.log(myDate);
+//   console.log(myDate.toDateString());
+//   console.log(myDate.toISOString());
+//   console.log(myDate.toString());
+//   console.log(myDate.toLocaleString());
+//   console.log( typeof myDate);  // object
+  
+
+let mycreateDate=new Date(2026,0,26)
+// console.log(mycreateDate.toDateString());
+
+let newDate=new Date(2026,2,12, 6,3)
+// console.log(newDate.toLocaleString());
+
+let createDate=new Date("2026-02-17")
+// console.log(createDate.toLocaleString());
+
+
+let myTimeStamp=Date.now()
+// console.log(myTimeStamp);
+// console.log(createDate.getTime());
+// console.log(Math.floor(Date.now()/1000));
+
+
+let date=new Date()
+// console.log(date);
+// console.log(date.getDay());
+// console.log(date.getFullYear());
+// console.log(date.getMonth()+1);
+// console.log(date.getHours());
+// console.log(date.getTime());
+// console.log(date.getDate());
+
+// console.log(date.toLocaleString('default',{
+//     weekday:"long"
+// }));
+
+
